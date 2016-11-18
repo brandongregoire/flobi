@@ -1,0 +1,6 @@
+framework module Pods_flobi {
+  umbrella header "Pods-flobi-umbrella.h"
+
+  export *
+  module * { export * }
+}
