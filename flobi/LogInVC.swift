@@ -9,13 +9,21 @@
 import UIKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class LogInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    // Must be in viewDidAppear to sign in before home screen
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+    }
+    
     
     @IBOutlet var emailField: Fancy_field!
 
@@ -42,6 +50,9 @@ class LogInVC: UIViewController {
                 print("BRANDON: Unable to autheticate to firebase")
             } else {
                 print("BRANDON: Successfully autheticated with firebase")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
     }
@@ -51,19 +62,31 @@ class LogInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     print("BRANDON: EMAIL user authenticated with firebase")
+                    if let user = user {
+                        self.completeSignIn(id: (user.uid))
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
                             print("BRANDON: Unable to authenticate with firebase using email")
                         } else {
                             print("BRANDON: Successfully autheticated with firebase using email")
-                        } // Add different sign in scenarios (Not enough characters in pass etc)    
+                            if let user = user {
+                                self.completeSignIn(id: (user.uid))
+                            }
+                        } // Add different sign in scenarios (Not enough characters in pass etc)
                     })
                 }
             })
         }
     }
     
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("Brandon Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+        
+    }
     
     
     

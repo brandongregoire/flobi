@@ -1,14 +1,14 @@
 //
-//  FancyView.swift
+//  CircleView.swift
 //  flobi
 //
-//  Created by Brandon Gregoire on 2016-11-18.
+//  Created by Brandon Gregoire on 2016-11-21.
 //  Copyright © 2016 brandongregoire. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIButton {
+class CircleView: UIImageView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,6 +16,13 @@ class FancyView: UIButton {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0 
     }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        layer.cornerRadius = self.frame.width / 2
+    }
+    
+    
+
 }
