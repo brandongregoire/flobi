@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		120480E91DDE7252004811DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120480E81DDE7252004811DB /* AppDelegate.swift */; };
-		120480EB1DDE7252004811DB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120480EA1DDE7252004811DB /* SignInVC.swift */; };
+		120480EB1DDE7252004811DB /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120480EA1DDE7252004811DB /* LogInVC.swift */; };
 		120480EE1DDE7252004811DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120480EC1DDE7252004811DB /* Main.storyboard */; };
 		120480F01DDE7252004811DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 120480EF1DDE7252004811DB /* Assets.xcassets */; };
 		120480F31DDE7252004811DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120480F11DDE7252004811DB /* LaunchScreen.storyboard */; };
-		120480FB1DDE72E3004811DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 120480FA1DDE72E3004811DB /* GoogleService-Info.plist */; };
 		1217BC481DDFBAB6002F327C /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217BC471DDFBAB6002F327C /* FancyView.swift */; };
 		1217BC4B1DDFCA1F002F327C /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217BC4A1DDFCA1F002F327C /* constants.swift */; };
 		1217BC4D1DDFCC21002F327C /* roundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217BC4C1DDFCC21002F327C /* roundButton.swift */; };
 		1217BC4F1DDFCEC0002F327C /* Fancy field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217BC4E1DDFCEC0002F327C /* Fancy field.swift */; };
 		12BB7B141DE22130007D8765 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BB7B131DE22130007D8765 /* FancyBtn.swift */; };
+		12BB7B201DE24556007D8765 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12BB7B1F1DE24556007D8765 /* GoogleService-Info.plist */; };
 		348538BF965FD3112B6BFD1B /* Pods_flobi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E1EABD6A73B016E10F9177 /* Pods_flobi.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,17 +25,18 @@
 		05E1EABD6A73B016E10F9177 /* Pods_flobi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flobi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		120480E51DDE7252004811DB /* flobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		120480E81DDE7252004811DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		120480EA1DDE7252004811DB /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		120480EA1DDE7252004811DB /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		120480ED1DDE7252004811DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		120480EF1DDE7252004811DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		120480F21DDE7252004811DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		120480F41DDE7252004811DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		120480FA1DDE72E3004811DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1217BC471DDFBAB6002F327C /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		1217BC4A1DDFCA1F002F327C /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		1217BC4C1DDFCC21002F327C /* roundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundButton.swift; sourceTree = "<group>"; };
 		1217BC4E1DDFCEC0002F327C /* Fancy field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fancy field.swift"; sourceTree = "<group>"; };
 		12BB7B131DE22130007D8765 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		12BB7B1F1DE24556007D8765 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		12BB7B211DE274B0007D8765 /* flobi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = flobi.entitlements; sourceTree = "<group>"; };
 		694A2FB476F1C727A5066DAB /* Pods-flobi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flobi.release.xcconfig"; path = "Pods/Target Support Files/Pods-flobi/Pods-flobi.release.xcconfig"; sourceTree = "<group>"; };
 		A3BB907EAB8FDE0CBAE21C96 /* Pods-flobi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flobi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flobi/Pods-flobi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +74,7 @@
 		120480E71DDE7252004811DB /* flobi */ = {
 			isa = PBXGroup;
 			children = (
+				12BB7B211DE274B0007D8765 /* flobi.entitlements */,
 				1217BC491DDFCA0F002F327C /* Util */,
 				12AE1D751DDE78D3004E5451 /* Model */,
 				12AE1D761DDE78E6004E5451 /* Controller */,
@@ -81,8 +83,8 @@
 				120480EF1DDE7252004811DB /* Assets.xcassets */,
 				120480F11DDE7252004811DB /* LaunchScreen.storyboard */,
 				120480E81DDE7252004811DB /* AppDelegate.swift */,
+				12BB7B1F1DE24556007D8765 /* GoogleService-Info.plist */,
 				120480F41DDE7252004811DB /* Info.plist */,
-				120480FA1DDE72E3004811DB /* GoogleService-Info.plist */,
 			);
 			path = flobi;
 			sourceTree = "<group>";
@@ -116,7 +118,7 @@
 		12AE1D761DDE78E6004E5451 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				120480EA1DDE7252004811DB /* SignInVC.swift */,
+				120480EA1DDE7252004811DB /* LogInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = J7KW5S6YEH;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -202,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				120480F31DDE7252004811DB /* LaunchScreen.storyboard in Resources */,
-				120480FB1DDE72E3004811DB /* GoogleService-Info.plist in Resources */,
+				12BB7B201DE24556007D8765 /* GoogleService-Info.plist in Resources */,
 				120480F01DDE7252004811DB /* Assets.xcassets in Resources */,
 				120480EE1DDE7252004811DB /* Main.storyboard in Resources */,
 			);
@@ -263,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				120480EB1DDE7252004811DB /* SignInVC.swift in Sources */,
+				120480EB1DDE7252004811DB /* LogInVC.swift in Sources */,
 				1217BC4F1DDFCEC0002F327C /* Fancy field.swift in Sources */,
 				1217BC4D1DDFCC21002F327C /* roundButton.swift in Sources */,
 				120480E91DDE7252004811DB /* AppDelegate.swift in Sources */,
@@ -393,6 +400,7 @@
 			baseConfigurationReference = A3BB907EAB8FDE0CBAE21C96 /* Pods-flobi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flobi/flobi.entitlements;
 				DEVELOPMENT_TEAM = J7KW5S6YEH;
 				INFOPLIST_FILE = flobi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +415,7 @@
 			baseConfigurationReference = 694A2FB476F1C727A5066DAB /* Pods-flobi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flobi/flobi.entitlements;
 				DEVELOPMENT_TEAM = J7KW5S6YEH;
 				INFOPLIST_FILE = flobi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
