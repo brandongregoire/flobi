@@ -187,13 +187,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e1a-ZK-nJc">
                                         <rect key="frame" x="8" y="10" width="323" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-gf-Nsv" customClass="CircleView" customModule="flobi" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-gf-Nsv" customClass="CircleView" customModule="flobi" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="39" height="40"/>
                                                 <color key="backgroundColor" red="0.99215686274509807" green="0.6588235294117647" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="39" id="Pc9-a4-82z"/>
                                                     <constraint firstAttribute="height" constant="39" id="THI-a4-GiO"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="b86-F7-ec2" appends="YES" id="1Kg-HH-dbO"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEv-gb-KkF" customClass="Fancy_field" customModule="flobi" customModuleProvider="target">
                                                 <rect key="frame" x="49" y="0.0" width="225" height="40"/>
@@ -343,6 +347,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addImage" destination="ebG-gf-Nsv" id="prE-9a-GJS"/>
                         <outlet property="tableView" destination="gqY-7y-mtb" id="WzS-j0-q8T"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogIn" id="rvl-qE-Fcq"/>
                     </connections>
@@ -351,6 +356,11 @@
                 <tapGestureRecognizer id="cbf-Iv-Anu">
                     <connections>
                         <action selector="signInTapped:" destination="hWe-eM-FIa" id="ttM-sn-y1o"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="b86-F7-ec2">
+                    <connections>
+                        <action selector="addImageTapped:" destination="hWe-eM-FIa" id="9Lx-AV-day"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
