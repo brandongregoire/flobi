@@ -213,6 +213,9 @@
                                                     <constraint firstAttribute="height" constant="39" id="zex-tr-xjB"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="hWe-eM-FIa" eventType="touchUpInside" id="u5L-LV-GfB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -323,6 +326,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="po5-VI-ec2" id="9gM-wb-B2Z"/>
+                                            <outlet property="likeImg" destination="led-VN-DQd" id="IQM-tj-vYh"/>
                                             <outlet property="likeLbl" destination="Bg4-pc-hxn" id="JMI-Cs-Pda"/>
                                             <outlet property="postImage" destination="ebm-9o-N8L" id="qkr-nr-xfL"/>
                                             <outlet property="profieImage" destination="jtx-8U-zRt" id="qDE-Iw-wHM"/>
@@ -348,6 +352,7 @@
                     </view>
                     <connections>
                         <outlet property="addImage" destination="ebG-gf-Nsv" id="prE-9a-GJS"/>
+                        <outlet property="captionField" destination="gEv-gb-KkF" id="jZE-fx-C0m"/>
                         <outlet property="tableView" destination="gqY-7y-mtb" id="WzS-j0-q8T"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogIn" id="rvl-qE-Fcq"/>
                     </connections>
